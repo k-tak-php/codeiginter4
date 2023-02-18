@@ -1,0 +1,14 @@
+{
+    "name": "codeiginter4",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www/html",
+    "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "shufo.vscode-blade-formatter"
+    ],
+    "settings": {
+        "editor. tabSize": 4
+    }
+}
