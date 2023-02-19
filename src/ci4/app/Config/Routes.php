@@ -31,6 +31,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+//ルーティング設定
+$routes->post('article', 'Sample\Article::make');
+$routes->get('article/(:num)', 'Sample\Article::find/$1');
+$routes->put('article', 'Sample\Article::update');
+$routes->delete('article', 'Sample\Article::delete');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
