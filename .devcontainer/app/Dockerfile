@@ -13,7 +13,7 @@ RUN apt-get update \
     nodejs \
     npm \
     && pecl install xdebug \
-    && docker-php-ext-install pdo_pgsql intl \
+    && docker-php-ext-install pgsql pdo_pgsql intl \
     && rm -rf /var/lib/apt/lists/* 
 
 ENV TZ=Asia/Tokyo
